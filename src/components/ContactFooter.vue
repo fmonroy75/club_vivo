@@ -64,7 +64,10 @@
       <v-divider class="my-6 border-opacity-25" color="white"></v-divider>
       
       <div class="text-center text-body-2 text-grey-lighten-2">
-        &copy; {{ new Date().getFullYear() }} Club Vive. Todos los derechos reservados.
+        <p class="mb-1">&copy; {{ new Date().getFullYear() }} Club Vive. Todos los derechos reservados.</p>
+        <p class="mb-0 text-white font-weight-bold">
+          Desarrollado por <a href="https://www.ingeniumbright.com" target="_blank" rel="noopener noreferrer" class="glow-link">IngeniumBright</a> - por que lo hacemos facil
+        </p>
       </div>
     </v-container>
   </v-footer>
@@ -81,5 +84,17 @@
 }
 .social-btn .v-icon {
   transition: all 0.3s ease;
+}
+
+.glow-link {
+  color: var(--v-primary-base, #ff3d00);
+  text-decoration: none;
+  text-shadow: 0 0 5px rgba(255, 61, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.glow-link:hover {
+  color: #ff5722;
+  text-shadow: 0 0 10px rgba(255, 61, 0, 0.8), 0 0 20px rgba(255, 61, 0, 0.6);
 }
 </style>

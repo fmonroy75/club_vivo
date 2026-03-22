@@ -19,16 +19,44 @@
             {{ post.title }}
           </v-card-title>
           
-          <v-card-text class="flex-grow-1">
+          <v-card-text class="flex-grow-1 text-truncate" style="max-height: 80px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical;">
             {{ post.content }}
           </v-card-text>
           
           <v-card-actions class="px-4 pb-4">
-            <v-btn color="primary" variant="text" class="text-none">Leer más <v-icon right>mdi-arrow-right</v-icon></v-btn>
+            <v-btn color="primary" variant="text" class="text-none" @click="openPost(post)">
+              Leer más <v-icon right>mdi-arrow-right</v-icon>
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
     </v-row>
+
+    <!-- Post Detail Dialog -->
+    <v-dialog v-model="dialog" max-width="800" scrollable>
+      <v-card class="glass-card" v-if="selectedPost">
+        <v-img 
+          :src="selectedPost.image || 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80'" 
+          height="300" 
+          cover
+        ></v-img>
+        
+        <v-card-title class="text-h4 font-weight-bold mt-4 mx-2" style="white-space: pre-wrap; line-height: 1.2;">
+          {{ selectedPost.title }}
+        </v-card-title>
+        
+        <v-divider class="mx-4 my-2"></v-divider>
+
+        <v-card-text class="text-body-1 mx-2 mb-4" style="white-space: pre-line;">
+          {{ selectedPost.content }}
+        </v-card-text>
+        
+        <v-card-actions class="pb-4 pr-4 bg-black bg-opacity-50">
+          <v-spacer></v-spacer>
+          <v-btn color="primary" variant="elevated" @click="dialog = false" class="px-6">Cerrar</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </v-container>
 </template>
 
@@ -39,6 +67,14 @@ import { db } from '../firebase/firebase'
 
 const posts = ref([])
 const loading = ref(true)
+
+const dialog = ref(false)
+const selectedPost = ref(null)
+
+function openPost(post) {
+  selectedPost.value = post
+  dialog.value = true
+}
 
 onMounted(async () => {
   try {
