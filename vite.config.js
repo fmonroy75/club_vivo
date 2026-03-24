@@ -8,7 +8,7 @@ import vueDevTools from "vite-plugin-vue-devtools";
 export default defineConfig({
   plugins: [vue(), vueDevTools()],
 
-  base: "/club-vivo/", // Cambia al nombre de tu repositorio
+  base: "/club_vivo/", // Cambia al nombre de tu repositorio
   build: {
     outDir: "dist",
     assetsDir: "assets",
