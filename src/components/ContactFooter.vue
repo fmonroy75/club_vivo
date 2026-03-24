@@ -5,38 +5,79 @@
         <!-- Ubicación -->
         <v-col cols="12" md="4" class="mb-6 mb-md-0" data-aos="fade-right">
           <div class="d-flex align-center mb-6">
-            <v-img src="/logo.png" max-width="150" alt="Club Vive Logo"></v-img>
+            <v-img src="/logo.jpg" max-width="150" alt="Club Vive Logo"></v-img>
           </div>
           <h3 class="text-h6 font-weight-bold mb-4 text-primary">Nuestra Ubicación</h3>
           <p class="d-flex align-start mb-2">
-            <v-icon color="primary" class="mr-3 mt-1">mdi-map-marker</v-icon> 
-            <span>Av. Principal de la Salud #123<br>Distrito Capital, Ciudad 10001</span>
+            <v-icon color="primary" class="mr-3 mt-1">mdi-map-marker</v-icon>
+            <span>Av. Principal de la Salud #123<br />Distrito Capital, Ciudad 10001</span>
           </p>
           <p class="d-flex align-center mb-2">
-            <v-icon color="primary" class="mr-3">mdi-phone</v-icon> 
+            <v-icon color="primary" class="mr-3">mdi-phone</v-icon>
             <span>+1 234 567 890</span>
           </p>
           <p class="d-flex align-start">
-            <v-icon color="primary" class="mr-3 mt-1">mdi-clock-outline</v-icon> 
-            <span>Lunes a Viernes: 6:00 AM - 11:00 PM<br>Fines de semana: 8:00 AM - 8:00 PM</span>
+            <v-icon color="primary" class="mr-3 mt-1">mdi-clock-outline</v-icon>
+            <span>Lunes a Viernes: 6:00 AM - 11:00 PM<br />Fines de semana: 8:00 AM - 8:00 PM</span>
           </p>
         </v-col>
-        
+
         <!-- Redes Sociales -->
-        <v-col cols="12" md="4" class="text-md-center mb-6 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+        <v-col
+          cols="12"
+          md="4"
+          class="text-md-center mb-6 mb-md-0"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <h3 class="text-h6 font-weight-bold mb-6 text-primary">Síguenos en las Redes</h3>
-          <p class="mb-6 text-grey-lighten-1">Únete a nuestra comunidad y mantente al tanto de nuestros eventos, retos y promociones exclusivas.</p>
+          <p class="mb-6 text-grey-lighten-1">
+            Únete a nuestra comunidad y mantente al tanto de nuestros eventos, retos y promociones
+            exclusivas.
+          </p>
           <div>
-            <v-btn icon color="transparent" elevation="0" size="large" href="https://facebook.com" target="_blank" class="mx-1 social-btn">
+            <v-btn
+              icon
+              color="transparent"
+              elevation="0"
+              size="large"
+              href="https://facebook.com"
+              target="_blank"
+              class="mx-1 social-btn"
+            >
               <v-icon size="x-large">mdi-facebook</v-icon>
             </v-btn>
-            <v-btn icon color="transparent" elevation="0" size="large" href="https://instagram.com" target="_blank" class="mx-1 social-btn">
+            <v-btn
+              icon
+              color="transparent"
+              elevation="0"
+              size="large"
+              href="https://instagram.com"
+              target="_blank"
+              class="mx-1 social-btn"
+            >
               <v-icon size="x-large">mdi-instagram</v-icon>
             </v-btn>
-            <v-btn icon color="transparent" elevation="0" size="large" href="https://twitter.com" target="_blank" class="mx-1 social-btn">
+            <v-btn
+              icon
+              color="transparent"
+              elevation="0"
+              size="large"
+              href="https://twitter.com"
+              target="_blank"
+              class="mx-1 social-btn"
+            >
               <v-icon size="x-large">mdi-twitter</v-icon>
             </v-btn>
-            <v-btn icon color="transparent" elevation="0" size="large" href="https://youtube.com" target="_blank" class="mx-1 social-btn">
+            <v-btn
+              icon
+              color="transparent"
+              elevation="0"
+              size="large"
+              href="https://youtube.com"
+              target="_blank"
+              class="mx-1 social-btn"
+            >
               <v-icon size="x-large">mdi-youtube</v-icon>
             </v-btn>
           </div>
@@ -45,10 +86,13 @@
         <!-- WhatsApp -->
         <v-col cols="12" md="4" class="text-md-right" data-aos="fade-left" data-aos-delay="200">
           <h3 class="text-h6 font-weight-bold mb-6 text-primary">Atención Inmediata</h3>
-          <p class="mb-6 text-grey-lighten-1">¿Tienes preguntas sobre nuestras membresías o quieres reservar una clase de prueba gratis? Escríbenos.</p>
-          <v-btn 
-            color="#25D366" 
-            prepend-icon="mdi-whatsapp" 
+          <p class="mb-6 text-grey-lighten-1">
+            ¿Tienes preguntas sobre nuestras membresías o quieres reservar una clase de prueba
+            gratis? Escríbenos.
+          </p>
+          <v-btn
+            color="#25D366"
+            prepend-icon="mdi-whatsapp"
             size="x-large"
             class="text-white font-weight-bold"
             elevation="4"
@@ -60,21 +104,30 @@
           </v-btn>
         </v-col>
       </v-row>
-      
+
       <v-divider class="my-6 border-opacity-25" color="white"></v-divider>
-      
+
       <div class="text-center text-body-2 text-grey-lighten-2">
-        <p class="mb-1">&copy; {{ new Date().getFullYear() }} Club Vive. Todos los derechos reservados.</p>
+        <p class="mb-1">
+          &copy; {{ new Date().getFullYear() }} Club Vive. Todos los derechos reservados.
+        </p>
         <p class="mb-0 text-white font-weight-bold">
-          Desarrollado por <a href="https://www.ingeniumbright.com" target="_blank" rel="noopener noreferrer" class="glow-link">IngeniumBright</a> - por que lo hacemos facil
+          Desarrollado por
+          <a
+            href="https://www.ingeniumbright.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glow-link"
+            >IngeniumBright</a
+          >
+          - por que lo hacemos facil
         </p>
       </div>
     </v-container>
   </v-footer>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped>
 .social-btn:hover .v-icon {
@@ -95,6 +148,8 @@
 
 .glow-link:hover {
   color: #ff5722;
-  text-shadow: 0 0 10px rgba(255, 61, 0, 0.8), 0 0 20px rgba(255, 61, 0, 0.6);
+  text-shadow:
+    0 0 10px rgba(255, 61, 0, 0.8),
+    0 0 20px rgba(255, 61, 0, 0.6);
 }
 </style>
