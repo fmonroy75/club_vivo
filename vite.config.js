@@ -9,6 +9,12 @@ export default defineConfig({
   plugins: [vue(), vueDevTools()],
 
   base: "club-vivo/", // Cambia al nombre de tu repositorio
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+    publicPath: "/",
+  },
+
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
