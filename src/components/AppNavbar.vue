@@ -1,6 +1,6 @@
 <template>
   <v-app-bar color="black" dark>
-    <v-img src="/logo.jpg" max-width="120" />
+    <v-img :src="logo" max-width="120" alt="Club Vive" />
 
     <v-spacer></v-spacer>
 
@@ -17,6 +17,8 @@
 </template>
 <script setup>
 import { useTheme } from "vuetify";
+
+import logo from "@/assets/logo.jpg";
 
 const theme = useTheme();
 

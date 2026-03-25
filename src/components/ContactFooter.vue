@@ -5,7 +5,7 @@
         <!-- Ubicación -->
         <v-col cols="12" md="4" class="mb-6 mb-md-0" data-aos="fade-right">
           <div class="d-flex align-center mb-6">
-            <v-img src="/logo.jpg" max-width="150" alt="Club Vive Logo"></v-img>
+            <v-img :src="logo" max-width="120" alt="Club Vive" />
           </div>
           <h3 class="text-h6 font-weight-bold mb-4 text-primary">Nuestra Ubicación</h3>
           <p class="d-flex align-start mb-2">
@@ -127,7 +127,9 @@
   </v-footer>
 </template>
 
-<script setup></script>
+<script setup>
+import logo from "@/assets/logo.jpg";
+</script>
 
 <style scoped>
 .social-btn:hover .v-icon {
